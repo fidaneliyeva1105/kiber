@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiber Qalxan — Təhlükəsizlik, Kibernetika və Kriptoqrafiya</title>
+</head>
+<body style="background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; line-height: 1.6;">
+
+    <!-- 1. SABİT NAVİQASİYA PANELİ -->
+    <header style="background-color: #161b22; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00ff66; position: sticky; top: 0; z-index: 100;">
+        <div style="font-size: 20px; font-weight: bold; color: #00ff66; letter-spacing: 1px;">🔒 KİBER QALXAN</div>
+        <nav>
+            <a href="#kibertahlukesizlik" style="color: white; text-decoration: none; margin-right: 15px; font-size: 15px; font-weight: bold;">🛡️ Kibertəhlükəsizlik</a>
+            <a href="#kripto" style="color: white; text-decoration: none; margin-right: 15px; font-size: 15px; font-weight: bold;">🔑 Şifrələmələr</a>
+            <a href="#kibernetika" style="color: white; text-decoration: none; font-size: 15px; font-weight: bold;">🧠 Kibernetika</a>
+        </nav>
+    </header>
+
+    <div style="padding: 20px; max-width: 800px; margin: 0 auto;">
+
+        <!-- 2. YANIB-SÖNƏN HAKER BAŞLIĞI -->
+        <div style="text-align: center; margin: 20px 0 40px 0;">
+            <style>
+                @keyframes kiberYanis {
+                    0% { opacity: 1; text-shadow: 0 0 10px #ff3333; }
+                    50% { opacity: 0.3; text-shadow: none; }
+                    100% { opacity: 1; text-shadow: 0 0 10px #ff3333; }
+                }
+                .haker-yazi {
+                    color: #ff3333; 
+                    font-weight: bold; 
+                    font-size: 24px; 
+                    letter-spacing: 2px;
+                    animation: kiberYanis 1.8s infinite;
+                    margin: 0;
+                }
+                .kiber-btn {
+                    background-color: #161b22; 
+                    color: #00ff66; 
+                    border: 1px solid #00ff66; 
+                    padding: 12px; 
+                    width: 100%; 
+                    text-align: left; 
+                    margin-bottom: 10px; 
+                    cursor: pointer; 
+                    border-radius: 6px; 
+                    font-size: 15px;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+                }
+                .kiber-btn:hover {
+                    background-color: #00ff66;
+                    color: #0d1117;
+                    box-shadow: 0 0 15px #00ff66;
+                    transform: translateX(5px);
+                }
+            </style>
+            <p class="haker-yazi">⚠️ DİQQƏT: SİSTEMƏ SIZMA CƏHDİ BLOKLANDI...</p>
+        </div>
+
+        <!-- 3. BÖLMƏ: KİBERTƏHLÜKƏSİZLİK MƏLUMATI -->
+        <section id="kibertahlukesizlik" style="background-color: #161b22; border: 1px solid #21262d; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+            <h3 style="color: #00ff66; margin-top: 0; font-size: 22px; border-bottom: 1px solid #30363d; padding-bottom: 10px;">🛡️ Kibertəhlükəsizlik Nədir?</h3>
+            <p style="color: #8b949e; font-size: 16px; margin-bottom: 0;">
+                Kibertəhlükəsizlik — rəqəmsal sistemlərimizi və şəxsi məlumatlarımızı haker hücumlarından qorumaq üçün görülən tədbirlərdir. İnternetdə təhlükəsiz qalmaq üçün güclü şifrələrdən istifadə etməli və ikiaddımlı doğrulamadan (2FA) yararlanmalıyıq.
+            </p>
+        </section>
+
+        <!-- 4. BÖLMƏ: SEZAR ŞİFRƏLƏMƏ ALƏTİ -->
+        <section id="kripto" style="background-color: #161b22; border: 2px solid #00ffff; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+            <h2 style="color: #00ffff; margin-top: 0; font-size: 22px;">🔑 Sezar Şifrələmə Laboratoriyası</h2>
+            <p style="color: #8b949e; font-size: 15px;">Mətn daxil edin, sistem onu avtomatik olaraq əlifbada 3 hərf irəli sürüşdürərək haker şifrəsinə çevirsin!</p>
+            <input type="text" id="normalMetn" oninput="sezarSifrele()" placeholder="Məsələn: salam kiber" style="width: 100%; padding: 12px; background-color: #0d1117; color: white; border: 1px solid #30363d; border-radius: 6px; margin-bottom: 15px; font-size: 15px; box-sizing: border-box;">
+            <div id="sifreliMetn" style="width: 100%; padding: 12px; background-color: #0d1117; color: #00ff66; border: 1px solid #00ff66; border-radius: 6px; font-family: monospace; font-size: 18px; font-weight: bold; min-height: 25px; box-sizing: border-box; word-break: break-all;">...</div>
+        </section>
+
+        <!-- 🔥 5. YENİ BÖLMƏ: QUŞ DİLİ ŞİFRƏLƏMƏ ALƏTİ -->
+        <section style="background-color: #161b22; border: 2px solid #ff00ff; padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 0 20px rgba(255,0,255,0.1);">
+            <h2 style="color: #ff00ff; margin-top: 0; font-size: 22px;">🦜 Milli "Quş Dili" Şifrələyicisi</h2>
+            <p style="color: #8b949e; font-size: 15px;">Yazdığınız hər sözü canlı olaraq quş dilinə tərcümə edən və hər hecaya 'g' artıran gizli sistem!</p>
+            <hr style="border: 1px dashed #30363d; margin-bottom: 20px;">
+
+            <p style="color: #ffff00; margin-bottom: 5px;"><strong>Azərbaycanca Mətn:</strong></p>
+            <input type="text" id="qusdiliGiris" oninput="qusdilineCevir()" placeholder="Məsələn: salam fidan" style="width: 100%; padding: 12px; background-color: #0d1117; color: white; border: 1px solid #30363d; border-radius: 6px; margin-bottom: 15px; font-size: 15px; box-sizing: border-box;">
+
+            <p style="color: #ff00ff; margin-bottom: 5px;"><strong>💬 Quş Dilində Şifrəli Variant:</strong></p>
+            <div id="qusdiliCixis" style="width: 100%; padding: 12px; background-color: #0d1117; color: #ff00ff; border: 1px solid #ff00ff; border-radius: 6px; font-family: monospace; font-size: 18px; font-weight: bold; min-height: 25px; box-sizing: border-box; word-break: break-all;">...</div>
+        </section>
+
+        <!-- 6. BÖLMƏ: KİBER SƏVİYYƏ TESTİ -->
+        <section style="background-color: #161b22; border: 2px solid #00ff66; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+            <h2 style="color: #00ff66; text-align: center; margin-top: 0; font-size: 24px;">🕵️‍♂️ KİBER SƏVİYYƏNİ TEST ET!</h2>
+            <p style="text-align: center; color: #8b949e; margin-bottom: 25px;">Hakerlər səni aldada bilər? Doğru variantı seç:</p>
+            <hr style="border: 1px dashed #30363d; margin-bottom: 25px;">
+
+            <div style="margin-bottom: 35px;">
+                <p style="color: #ffff00; font-size: 18px; margin-bottom: 15px;"><strong>Sual 1: Sosial şəbəkə şifrəndə hansı məlumatlar var?</strong></p>
+                <button onclick="alert('❌ SƏHV CAVAB!\nHakerlər adınızı və doğum ilinizi tapıb şifrənizi qıra bilərlər. Təcili dəyişin!')" class="kiber-btn">A) Adım, soyadım və ya doğum ilim var.</button>
+                <button onclick="alert('✅ AFƏRİN!\nMürəkkəb şifrələri qırmaq hakerlər üçün çox çətindir.')" class="kiber-btn">B) Böyük-kiçik hərflər, rəqəm və simvollar (? , !, @) var.</button>
+            </div>
+        </section>
+
+        <!-- 7. BÖLMƏ: KİBERNETİKA MƏLUMATI -->
+        <section id="kibernetika" style="background-color: #161b22; border: 1px solid #30363d; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
+            <h2 style="color: #00ffff; border-left: 4px solid #00ffff; padding-left: 12px; font-size: 22px; margin-top: 0;">🧠 Kibernetika Nədir?</h2>
+            <p style="color: #8b949e; font-size: 16px;">
+                Kibernetika — insanlarda, heyvanlarda və xüsusilə müasir maşınlarda idarəetmə, rabitə və məlumat ötürülməsi proseslərini öyrənən elmdir. Bu elm süni intellektin təməlidir.
+            </p>
+        </section>
+
+        <!-- 8. BÖLMƏ: ƏLAQƏ FORMASI -->
+        <section style="background-color: #161b22; border: 2px solid #ff3333; padding: 30px; border-radius: 12px;">
+            <h2 style="color: #ff3333; text-align: center; margin-top: 0; font-size: 24px;">📩 Bizə Mesaj Yazın</h2>
+            <form action="https://formspree.io" method="POST">
+                <p style="color: #ffff00; margin-bottom: 8px;"><strong>Adınız:</strong></p>
+                <input type="text" name="name" placeholder="Məsələn: Fidan" required style="width: 100%; padding: 12px; background-color: #0d1117; color: white; border: 1px solid #30363d; border-radius: 6px; margin-bottom: 20px; box-sizing: border-box;">
+                <p style="color: #ffff00; margin-bottom: 8px;"><strong>Mesajınız:</strong></p>
+                <textarea name="message" rows="4" placeholder="Saxta linkləri necə aşkar edə bilərəm?" required style="width: 100%; padding: 12px; background-color: #0d1117; color: white; border: 1px solid #30363d; border-radius: 6px; margin-bottom: 25px; resize: none; box-sizing: border-box;"></textarea>
+                <button type="submit" style="background-color: #ff3333; color: white; border: none; padding: 14px; width: 100%; font-size: 16px; font-weight: bold; cursor: pointer; border-radius: 6px;">🚀 Mesajı Göndər</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- FUNKSİONAL JAVASCRIPT KODLARI -->
+    <script>
+        // Sezar Şifrələməsi Funksiyası
+        function sezarSifrele() {
+            var input = document.getElementById('normalMetn').value;
+            var output = '';
+            var shift = 3;
+            for (var i = 0; i < input.length; i++) {
+                var c = input.charCodeAt(i);
+                if (c >= 65 && c <= 90) output += String.fromCharCode((c - 65 + shift) % 26 + 65);
+                else if (c >= 97 && c <= 122) output += String.fromCharCode((c - 97 + shift) % 26 + 97);
+                else output += input.charAt(i);
+            }
+            document.getElementById('sifreliMetn').innerText = output || '...';
+        }
+
+        // 🦜 Azərbaycan Dilinə Uyğun Ağıllı Quş Dili Funksiyası
+        function qusdilineCevir() {
+            var input = document.getElementById('qusdiliGiris').value.toLowerCase();
+            var output = '';
+            // Azərbaycan dilindəki bütün saitlər
+            var saitler = ['a', 'e', 'ə', 'ı', 'i', 'o', 'ö', 'u', 'ü'];
+
+            for (var i = 0; i < input.length; i++) {
+                var herf = input.charAt(i);
+                output += herf;
+                // Əgər hərf saitdirsə, dərhal ardına 'g' və həmin saiti əlavə et
+                if (saitler.includes(herf)) {
+                    output += 'g' + herf;
+                }
+            }
+            document.getElementById('qusdiliCixis').innerText = output || '...';
+        }
+    </script>
+
+    <footer style="text-align: center; padding: 30px; color: #8b949e; font-size: 14px; margin-top: 50px; background-color: #161b22; border-top: 1px solid #21262d;">
+        &copy; 2026 Kiber Qalxan Portalı. Bütün hüquqlar qorunur.
+    </footer>
+
+</body>
+</html>
